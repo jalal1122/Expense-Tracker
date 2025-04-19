@@ -1,0 +1,5 @@
+food 
+travel
+shopping
+bills
+personal care

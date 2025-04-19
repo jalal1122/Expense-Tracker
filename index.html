@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Hello MJ</h1>
+        <div class="total">
+          <p>Total:</p>
+          <h1>500 pkr</h1>
+        </div>
+        <div class="exprense-list-div">
+          <ul class="expense-list">
+            <li>
+              <div class="expense-img-div"><img src="./assets/food.png" alt="" /></div>
+              <div class="expense-description">
+                <h3>Food</h3>
+                <p class="expense-type">food</p>
+              </div>
+              <div class="expense-amount">
+                <h3>500</h3>
+                <p class="exprense-date">2023-10-01</p>
+              </div>
+              <div class="delEditDiv"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <h1>Muhammad Jalal</h1>
+        </div>
+        <div class="right-bottom addExpenseDiv">
+          <div class="amount-div"></div>
+          <div class="expense-name-div"></div>
+          <div class="expense-options-div">
+            <input type="radio" name="food" id="foodOption" value="food" />
+            <label for="foodOption">Food</label>
+            <input
+              type="radio"
+              name="travel"
+              id="travelOption"
+              value="travel"
+            />
+            <label for="travelOption">Travel</label>
+            <input
+              type="radio"
+              name="shopping"
+              id="shoppingOption"
+              value="shopping"
+            />
+            <label for="shoppingOption">Shopping</label>
+            <input type="radio" name="bills" id="billsOption" value="bills" />
+            <label for="billsOption">Bills</label>
+            <input
+              type="radio"
+              name="personalCare"
+              id="personalCareOption"
+              value="personalCare"
+            />
+            <label for="personalCareOption">Personal Care</label>
+          </div>
+          <button class="addExpenseBtn">Add to Expense</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
