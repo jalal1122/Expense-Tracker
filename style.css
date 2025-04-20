@@ -18,6 +18,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .left {
@@ -27,6 +28,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  align-self: flex-start;
+  gap: 20px;
 }
 
 .total {
@@ -63,9 +66,9 @@ li {
   width: 100%;
 }
 
-li img {
-  width: 30px;
-  height: 30px;
+img {
+  width: 25px;
+  height: 25px;
 }
 
 .expense-img-div {
@@ -85,21 +88,21 @@ li img {
   gap: 5px;
 }
 
-.expense-amount{
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+.expense-amount {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 }
 
-.exprense-date{
-    font-size: 12px;
-    color: #888;
+.exprense-date {
+  font-size: 12px;
+  color: #888;
 }
 
-.right{
+.right {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -109,4 +112,129 @@ li img {
   background-color: #f0f0f0;
   border-radius: 30px;
   height: 100%;
+  gap: 20px;
+}
+
+.addExpenseDiv{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.expense-options-div{
+  align-self: flex-start;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.foodOption,.travelOption,.shoppingOption,.billsOption,.personalCareOption{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+input[type="text"]{
+  width: 200px;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #42224A;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #E8F1FE;
+}
+
+.amount-div,.expense-name-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount-div img,.expense-name-div img{
+  background-color: #8F659A;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.addExpenseBtn{
+  background-color: #9335aa;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.greeting-left{
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+
+.total{
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  background-color: #42224A;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.total p{
+  font-size: 16px;
+  color: rgb(173, 173, 173);
+  margin-bottom: 10px;
+}
+
+.delEditDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #F2AA93;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.delEditDiv:hover{
+  background-color: #e05628;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.exprense-list-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  margin-top: -15px;
+}
+
+.right-top{
+  width: 94%;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
