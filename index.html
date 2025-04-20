@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Expense Tracker</h1>
     <div class="container">
       <div class="left">
         <h1 class="greeting-left">Hello, MJ</h1>
@@ -17,20 +18,7 @@
         <div class="exprense-list-div">
           <h1 class="exprense-list-title">Expense List</h1>
           <ul class="expense-list">
-            <li>
-              <div class="expense-img-div">
-                <img src="./assets/food.png" alt="" />
-              </div>
-              <div class="expense-description">
-                <h3>Food</h3>
-                <p class="expense-type">food</p>
-              </div>
-              <div class="expense-amount">
-                <h3>500</h3>
-                <p class="exprense-date">2023-10-01</p>
-              </div>
-              <div class="delEditDiv">&cross;</div>
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -41,7 +29,11 @@
         <div class="right-bottom addExpenseDiv">
           <div class="amount-div">
             <img src="./assets/amount.png" alt="" />
-            <input type="text" placeholder="amount here" class="amountInput" />
+            <input
+              type="number"
+              placeholder="amount here"
+              class="amountInput"
+            />
           </div>
           <div class="expense-name-div">
             <img src="./assets/label.png" alt="" />
@@ -75,7 +67,7 @@
               <label for="shoppingOption">Shopping</label>
             </div>
             <div class="billsOption">
-              <input type="radio" name="food" id="billsOption" value="bills" />
+              <input type="radio" name="food" id="billsOption" value="bill" />
               <label for="billsOption">Bills</label>
             </div>
             <div class="personalCareOption">
